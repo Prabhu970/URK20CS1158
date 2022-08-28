@@ -7,11 +7,11 @@ let tails = 0;
 fbtn.addEventListener("click", () => {
     let i = Math.floor(Math.random() * 2);
     if (i) {
-        document.getElementById("flippy").innerHTML = "<img src = Head.jpg width = 100 height = 100 ></img>";
+        document.getElementById("flippy").innerHTML = "<img src = Exp5/Head.jpg width = 100 height = 100 ></img>";
         heads++;
     }
     else {
-        document.getElementById("flippy").innerHTML = "<img src = Tail.jpg width = 100 height = 100 ></img>";
+        document.getElementById("flippy").innerHTML = "<img src = Exp5/Tail.jpg width = 100 height = 100 ></img>";
         tails++;
     }
 
@@ -79,7 +79,7 @@ function BMI() {
 function grow() {
     var r = parseInt(document.getElementById("row").value);
     var c = parseInt(document.getElementById("column").value);
-    var list = ["Apple.jpg", "Green_Apple.jpg", "Orange.jpg"];
+    var list = ["Exp5/Apple.jpg", "Exp5/Green_Apple.jpg", "Exp5/Orange.jpg"];
     document.getElementById("garden").innerHTML = null;
     for (let i = 0; i < r; i++) {
         for (let j = 0; j < c; j++) {
